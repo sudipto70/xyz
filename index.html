@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .contra {
+        float: right;
+        position: relative;
+        width: 50%;
+      }
+
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
+
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .contra:hover .image {
+        opacity: 0.3;
+      }
+
+      .contra:hover .middle {
+        opacity: 1;
+      }
+
+      .text {
+        /* background-color: #04AA6D; */
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+    </style>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&family=Nunito+Sans:wght@600;800&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Lilita+One&family=Montserrat&family=Nunito+Sans:wght@600;800&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Lilita+One&family=Montserrat&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <nav class="navbar bg-body-tertiary">  -->
+          <!-- <div class="container-fluid"> -->
+          <a class="navbar-brand" href="#">
+            <img
+              class="stage"
+              src="image\istockphoto-952081702-612x612-removebg-preview (1).png"
+              alt="Logo"
+              width="60"
+              height="74"
+              class="d-inline-block align-text-top"
+            />
+            KidKinder
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse dell"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#coaching">Classes</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#teacher">Teachers</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle action"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#blogger">Blog Grid</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Detail</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <button class="btn btn-outline-success bronze" type="submit">
+             <a href="#book"> Join Class
+            </a> </button>
+            <!-- </form> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="work">
+      <div class="container">
+        <div class="banner-box">
+          <h5 class="text1"><strong>Kids Learning Center</strong></h5>
+          <h1 class="text2"><strong>New Approch to Kids Education</strong></h1>
+          <p class="text3">
+            Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed
+            sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed
+            ipsum at ipsum nonumy amet. Clita lorem dolore sed stet et est justo
+            dolore.
+          </p>
+          <button class="btn mt-3" type="button" name="button">
+            Learn More
+          </button>
+        </div>
+        <div>
+          <img class="banner-img" src="image\header.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="rock">
+      <div class="container">
+        <div class="row">
+          <div
+            class="card mb-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 box1"
+            style="max-width: 540px"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="image\Screenshot 2023-06-17 135209.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Playground</h5>
+                  <p class="card-text">
+                    Kasd labore kasd et dolor est rebum dolor ut, clita dolor
+                    vero lorem amet elitr vero...
+                  </p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card mb-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 box2"
+            style="max-width: 540px"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="image\Screenshot 2023-06-17 140044.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Music & Dance</h5>
+                  <p class="card-text">
+                    Kasd labore kasd et dolor est rebum dolor ut, clita dolor
+                    vero lorem amet elitr vero...
+                  </p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card mb-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 box3"
+            style="max-width: 540px"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="image\Screenshot 2023-06-17 140251.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Arts & Crafts</h5>
+                  <p class="card-text">
+                    Kasd labore kasd et dolor est rebum dolor ut, clita dolor
+                    vero lorem amet elitr vero...
+                  </p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <!-- <div class="container solid1"> -->
+          <div
+            class="card mb-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 box4"
+            style="max-width: 540px"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="image\Screenshot 2023-06-17 182437.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Safe Transportation</h5>
+                  <p class="card-text">
+                    Kasd labore kasd et dolor est rebum dolor ut, clita dolor
+                    vero lorem amet elitr vero...
+                  </p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card mb-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 box5"
+            style="max-width: 540px"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="image\Screenshot 2023-06-17 182457.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Healthy Food</h5>
+                  <p class="card-text">
+                    Kasd labore kasd et dolor est rebum dolor ut, clita dolor
+                    vero lorem amet elitr vero...
+                  </p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card mb-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 box6"
+            style="max-width: 540px"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="image\1Screenshot 2023-06-17 182657.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Educational Tour</h5>
+                  <p class="card-text">
+                    Kasd labore kasd et dolor est rebum dolor ut, clita dolor
+                    vero lorem amet elitr vero...
+                  </p>
+                  <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="teach">
+      <div class="container">
+        <div class="app">
+          <img class="zone" src="image\about-1.jpg" alt="" />
+        </div>
+
+        <div class="sap">
+          <p class="sonic">Learn About Us</p>
+          <br />
+
+          <p class="lock"><strong>Best School For Your Kids</strong></p>
+
+          <br />
+
+          <p class="chase">
+            Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
+            dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat
+            justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor
+          </p>
+
+          <div class="intro">
+            <img src="image\about-2.jpg" alt="" />
+          </div>
+          <!-- 
+<div class="dose">
+  <p>Labore eos amet dolor amet diam</p>
+
+ 
+<p>
+  Labore eos amet dolor amet diam
+
+</p>
+
+
+
+<p>
+
+  Labore eos amet dolor amet diam
+</p>
+
+
+</div> -->
+          <div class="sand">
+            <img src="image\Screenshot 2023-06-22 141707.png" alt="" />Labore
+            eos amet dolor amet
+            <br />
+            <br />
+            <img src="image\Screenshot 2023-06-22 141707.png" alt="" />Labore
+            eos amet dolor amet
+
+            <br />
+            <br />
+            <!-- <div class="form"><img src="image\Screenshot 2023-06-22 141707.png" alt="">Labore eos amet dolor amet </div>
+  -->
+          </div>
+          <div class="bot">
+            <a href="#" class="buttonClass fight">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </section>
+    <section id="coaching" class="fun">
+      <div class="life">
+        <p>POPULAR CLASSES</p>
+        <p class="seen"><strong>Classes For Our Kids</strong></p>
+      </div>
+      <div class="container">
+        <div class="card qa1" style="width: 18rem">
+          <img src="image\blog-1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Drawing Class</h5>
+            <p class="card-text">
+              Age of Kids 3 - 6 Years
+              <br />
+              Total Seats 40 Seats
+              <br />
+              Class Time 08:00 - 10:00
+              <br />
+              Tution Fee $290 / Month
+            </p>
+            <a href="#" class="btn btn-primary">Join Now</a>
+          </div>
+        </div>
+
+        <div class="card qa2" style="width: 18rem">
+          <img src="image\blog-1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Languge Learning</h5>
+            <p class="card-text">
+              Age of Kids 3 - 6 Years
+              <br />
+              Total Seats 40 Seats
+              <br />
+              Class Time 08:00 - 10:00
+              <br />
+              Tution Fee $290 / Month
+            </p>
+            <a href="#" class="btn btn-primary">Join Now</a>
+          </div>
+        </div>
+
+        <div class="card qa3" style="width: 18rem">
+          <img src="image\blog-1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Basic Science</h5>
+            <p class="card-text">
+              Age of Kids 3 - 6 Years
+              <br />
+              Total Seats 40 Seats
+              <br />
+              Class Time 08:00 - 10:00
+              <br />
+              Tution Fee $290 / Month
+            </p>
+            <a href="#" class="btn btn-primary">Join Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- </div>  -->
+    </section>
+    <section id="book"  class="you">
+      <div class="container">
+        <!-- <div class="row"> -->
+        <div class="second">
+          <div class="stand">
+            <p>BOOK A SEAT</p>
+            <p class="dj"><strong>Book A Seat For Your Kid </strong></p>
+          </div>
+          <div class="out">
+            <p>
+              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
+              dolor lorem ipsum ut sed <br />
+              eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea
+              et erat ut sed diam sea <br />
+              ipsum est dolor
+            </p>
+          </div>
+
+          <!-- <div class="hope">
+            <img src="image\Screenshot 2023-06-22 141707.png" alt="" />
+            <br />
+            <img src="image\Screenshot 2023-06-22 141707.png" alt="" />
+
+            <br />
+            <img src="image\Screenshot 2023-06-22 141707.png" alt="" />
+          </div> -->
+
+          <div class="live">
+           <li> Labore eos amet dolor amet diam</li>
+           <li> Labore eos amet dolor amet diam</li>
+           <li> Labore eos amet dolor amet diam</li>
+          </div>
+          <div class="flip">
+            <a href="#" class="buttonClass flip1">Book Now</a>
+          </div>
+        </div>
+
+        <!-- 
+<div class="paul">
+    
+</div> -->
+
+        <div class="optimus">
+          <div class="paul1">
+            <p class="song"><strong>Book A Seat</strong></p>
+            <div class="form">
+              <input type="text" class="mine" placeholder="Your Name" />
+              <br />
+              <input type="text" class="mine" placeholder="Email" />
+
+              <!-- 
+<input type="text"  class="mine"  placeholder="Select Class">   -->
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle mine1"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <p class="nope">Select Class</p>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Class 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Class 2 </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Class 3</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="paul2">
+              <br />
+              <a href="#" class="buttonClass now">Book Now </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </section>
+    <section id="teacher" class="para">
+      <div class="para1">
+        <p>Our Teachers</p>
+        <h3>Meet Our Teachers</h3>
+      </div>
+
+      <div classs="chat">
+        <div class="contra col-xl-3">
+          <img
+            src="image\team-1.jpg"
+            alt="Avatar"
+            class="image"
+            style="width: 40%"
+          />
+          <div class="middle">
+            <div class="text">
+              <img
+                class="xat"
+                src="image\download-removebg-preview.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <br />
+          <h5>Music Teacher</h5>
+        </div>
+
+        <div class="contra col-xl-3">
+          <img
+            src="image\team-2.jpg"
+            alt="Avatar"
+            class="image"
+            style="width: 40%"
+          />
+          <div class="middle">
+            <div class="text">
+              <img
+                class="xat"
+                src="image\download-removebg-preview.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <br />
+          <h5>Language Teacher</h5>
+        </div>
+
+        <div class="contra col-xl-3">
+          <img
+            src="image\team-3.jpg"
+            alt="Avatar"
+            class="image"
+            style="width: 40%"
+          />
+          <div class="middle">
+            <div class="text">
+              <img
+                class="xat"
+                src="image\download-removebg-preview.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <br />
+          <h5>Dance Teacher</h5>
+        </div>
+
+        <div class="contra col-xl-3">
+          <img
+            src="image\team-4.jpg"
+            alt="Avatar"
+            class="image"
+            style="width: 40%"
+          />
+          <div class="middle">
+            <div class="text">
+              <img
+                class="xat"
+                src="image\download-removebg-preview.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <br />
+          <h5>Art Teacher</h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="state1">
+      <div class="just">
+        <p class="roll1">TESTIMONIAL</p>
+        <p class="roll">What Parents Say</p>
+      </div>
+      <div class="container">
+        <div class="mat1">
+          <div class="mat5">
+            <img
+              src="image\Screenshot 2023-06-29 162107-PhotoRoom.png-PhotoRoom.png"
+              alt=""
+            />
+            Contrary to popular beliIpsum ran <br />
+            roots in a piece of classical Latin litera <br />
+            45 BC, making it over
+          </div>
+          <div class="mat2">
+            <img class="mat4" src="image\testimonial-1.jpg" alt="" />
+            <div class="mat3">
+              <li>Parent Name</li>
+              <li>Parent Name</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="mat1">
+          <div class="mat5">
+            <img
+              src="image\Screenshot 2023-06-29 162107-PhotoRoom.png-PhotoRoom.png"
+              alt=""
+            />
+            Contrary to popular beliIpsum ran <br />
+            roots in a piece of classical Latin litera <br />
+            45 BC, making it over
+          </div>
+          <div class="mat2">
+            <img class="mat4" src="image\testimonial-1.jpg" alt="" />
+            <div class="mat3">
+              <li>Parent Name</li>
+              <li>Parent Name</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="mat1">
+          <div class="mat5">
+            <img
+              src="image\Screenshot 2023-06-29 162107-PhotoRoom.png-PhotoRoom.png"
+              alt=""
+            />
+            Contrary to popular beliIpsum ran <br />
+            roots in a piece of classical Latin litera <br />
+            45 BC, making it over
+          </div>
+
+          <div class="mat2">
+            <img class="mat4" src="image\testimonial-1.jpg" alt="" />
+            <div class="mat3">
+              <li>Parent Name</li>
+              <li>Parent Name</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blogger" class="john">
+      <div class="john1">
+        <p class="cena">LATEST BLOG</p>
+        <p class="cena1">LATEST ARTICLE FROM BLOG</p>
+      </div>
+
+      <!-- <div class="life"> -->
+      <!-- <p>POPULAR CLASSES</p>
+  <P class="seen"><strong>Classes For Our Kids</strong></P>
+  
+  </div> -->
+      <div class="container">
+        <div class="card qa1" style="width: 18rem">
+          <img src="image\blog-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Diam amet eos at no</h5>
+            <p class="card-text">
+              Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod,
+              duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor
+              ipsum justo amet stet...
+              <br />
+              <br />
+              <a href="#" class="btn btn-primary prime">Read More</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card qa2" style="width: 18rem">
+          <img src="image\blog-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Diam amet eos at no</h5>
+            <p class="card-text">
+              Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod,
+              duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor
+              ipsum justo amet stet...
+              <br />
+              <br />
+              <a href="#" class="btn btn-primary prime">Read More</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card qa3" style="width: 18rem">
+          <img src="image\blog-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Diam amet eos at no</h5>
+            <p class="card-text">
+              Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod,
+              duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor
+              ipsum justo amet stet...
+              <br />
+              <br />
+              <a href="#" class="btn btn-primary prime">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- </div>  -->
+    </section>
+    <!-- </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section> -->
+
+    <footer id="contact" class="end">
+      <div class="end1">
+        <div class="end2">
+          <img
+            class="strong"
+            src="image\Screenshot_2023-06-30_142751-removebg-preview.png"
+            alt=""
+          />
+          <h3 class="strong1">KidKinder</h3>
+
+          <p class="strong2">
+            Labore dolor amet ipsum ea, erat sit <br />
+            ipsum duo eos. Volup amet ea dolor et <br />
+            magna dolor, elitr rebum duo est <br />
+            sed diam elitr. Stet elitr stet diam duo eos <br />
+            rebum ipsum diam ipsum elitr.
+          </p>
+
+          <br />
+
+          <img
+            class="king"
+            src="image\Screenshot 2023-06-30 151345_prev_ui.png"
+            alt=""
+          />
+        </div>
+
+        <div class="done">
+          <p class="done1">Get In Touch</p>
+
+          <img
+            class="done2"
+            src="image\Screenshot 2023-06-30 153908_prev_ui.png"
+            alt=""
+          />
+
+          <div class="done3">Address <br />123 Street, New York, USA</div>
+
+          <img class="done4" src="image\images (1)_prev_ui (1).png" alt="" />
+
+          <div class="done5">EMail <br />info@example.com</div>
+
+          <img
+            class="done6"
+            src="image\Screenshot 2023-06-30 161137_prev_ui.png"
+            alt=""
+          />
+
+          <div class="done7">Phone <br />+012 345 67890</div>
+
+          <div class="chord">
+            <p>Quick Links</p>
+            <br />
+            <div class="go">
+              <img class="aft" src="image\images (2)_prev_ui.png" alt="" />
+              <p class="aft1">Home</p>
+
+              <img class="aft" src="image\images (2)_prev_ui.png" alt="" />
+              <p class="aft1">About Us</p>
+
+              <img class="aft" src="image\images (2)_prev_ui.png" alt="" />
+              <p class="aft1">Our Classes</p>
+
+              <img class="aft" src="image\images (2)_prev_ui.png" alt="" />
+              <p class="aft1">Our Teachers</p>
+
+              <img class="aft" src="image\images (2)_prev_ui.png" alt="" />
+              <p class="aft1">Our Blogs</p>
+
+              <img class="aft" src="image\images (2)_prev_ui.png" alt="" />
+              <p class="aft1">Contact Us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cvx">
+        <div class="cvx1">
+          <p class="cvx2">Newsletter</p>
+
+          <input class="axe" type="text" placeholder="Your Name" />
+          <br />
+          <input class="axe1" type="text" placeholder="Your Email" />
+          <br />
+          <br />
+          <br />
+          <a href="#" class="buttonClass srt">Submit Now</a>
+        </div>
+      </div>
+
+      <div class="ewa">
+        <p>© Your Site Name. All Rights Reserved. Designed by HTML Codex</p>
+      </div>
+    </footer>
+  </body>
+</html>
